@@ -74,6 +74,10 @@ a {
   font-size: 40px;
 }
 
+.clr {
+  clear: both;
+}
+
 /* padding */
 
 .py-1 {
@@ -196,7 +200,6 @@ nav li a.current /*makes more specific than a .current*/ {
 }
 
 #testimonials {
-  clear: both;
   height: 600px;
   background: url("../img/test-bg.jpg") no-repeat center center/cover;
   border-radius: 5px;
@@ -221,11 +224,37 @@ nav li a.current /*makes more specific than a .current*/ {
   border-radius: 50%;
 }
 
+/* contact form */
+
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c084;
+}
+
 /* footer */
 footer {
   background-color: #444;
   text-align: center;
   color: white;
   padding: 20px;
-  clear: both;
 }
