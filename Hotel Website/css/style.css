@@ -10,6 +10,16 @@ body {
   line-height: 1.8;
 }
 
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
 /* utilties class */
 .container {
   max-width: 1100px;
@@ -25,6 +35,32 @@ body {
 a {
   text-decoration: none;
 }
+
+.btn {
+  display: inline-block;
+  padding: 13px 18px;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  border: none;
+  cursor: pointer;
+}
+.btn-light {
+  background: #eee;
+  color: #333;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: black;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: white;
+}
+
+/* navbar */
 
 nav {
   background: #333;
@@ -84,17 +120,27 @@ nav li a.current /*makes more specific than a .current*/ {
   margin-bottom: 20px;
 }
 
-#jumbotron .btn {
-  display: inline-block;
-  padding: 13px 18px;
-  font-size: 18px;
-  color: #fff;
-  background: #333;
-  border: none;
-  cursor: pointer;
+/* Description */
+#desc {
+  height: 400px;
 }
 
-#jumbotron .btn:hover {
-  background: #f7c08a;
-  color: black;
+.desc-img {
+  float: left;
+  width: 50%;
+  background: url("../img/photo-1.jpg") no-repeat center center/cover;
+  min-height: 100%;
+}
+
+.desc-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 40px 30px;
+  overflow: hidden;
+}
+
+#desc p {
+  margin-bottom: 30px;
 }
