@@ -60,6 +60,16 @@ a {
   color: white;
 }
 
+.bg-light {
+  background-color: #fff;
+  color: #333;
+}
+
+.bg-primary {
+  background-color: #f7c08a;
+  color: #333;
+}
+
 /* navbar */
 
 nav {
@@ -143,4 +153,21 @@ nav li a.current /*makes more specific than a .current*/ {
 
 #desc p {
   margin-bottom: 30px;
+}
+
+/* Features */
+.feature {
+  float: left;
+  width: 33.3%;
+  padding: 40px;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: #444;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  clear: both;
 }
