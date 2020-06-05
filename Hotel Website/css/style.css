@@ -10,11 +10,16 @@ body {
   line-height: 1.8;
 }
 
+/* utilties class */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 0 20px;
   overflow: auto;
+}
+
+.span-color {
+  color: #f7c08a;
 }
 
 a {
@@ -56,7 +61,40 @@ nav li a {
 }
 
 nav li a:hover,
-nav li a.current {
+nav li a.current /*makes more specific than a .current*/ {
   background: #444;
   color: rgb(248, 193, 144);
+}
+
+/* jumbotron */
+#jumbotron {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  padding-top: 170px;
+}
+#jumbotron h1 {
+  font-size: 60px;
+  line-height: 2em;
+}
+
+#jumbotron p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#jumbotron .btn {
+  display: inline-block;
+  padding: 13px 18px;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  border: none;
+  cursor: pointer;
+}
+
+#jumbotron .btn:hover {
+  background: #f7c08a;
+  color: black;
 }
