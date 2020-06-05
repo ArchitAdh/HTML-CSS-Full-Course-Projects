@@ -1,1 +1,1 @@
-# HTML and CSS full course projects
+# HTML and CSS Projects from simple to advanced
