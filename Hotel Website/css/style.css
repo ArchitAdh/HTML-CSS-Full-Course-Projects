@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #333;
+  overflow: auto;
+  text-align: center;
+  /* so that background doesn't collapsse  */
+  /* line-height: 4.5; */
+}
+
+nav a {
+  color: white;
+}
+
+nav h1 {
+  padding: 15px;
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav li {
+  /* display: inline-block; */
+  float: left; /*(can be used instead of inline block) */
+  /* padding: 15px; */
+}
+
+nav li a {
+  display: block;
+  padding: 22px;
+  text-align: center;
+}
+
+nav li a:hover,
+nav li a.current {
+  background: #444;
+  color: rgb(248, 193, 144);
+}
