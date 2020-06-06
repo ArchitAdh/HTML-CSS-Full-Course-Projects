@@ -3,6 +3,10 @@ nav .logo {
   float: none;
 }
 
+nav ul {
+  margin-bottom: 10px;
+}
+
 nav ul,
 nav li {
   float: none;
@@ -11,6 +15,17 @@ nav li {
 nav li a {
   padding: 10px;
   border-bottom: 1px dotted #555;
+}
+
+#jumbotron {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#jumbotron h1 {
+  font-size: 40px;
+  line-height: 1.5em;
+  padding-top: 10px;
 }
 
 /* desc  */
@@ -27,4 +42,25 @@ nav li a {
 .feature {
   float: none;
   width: 100%;
+}
+
+/* about */
+
+#about-info .info-left,
+#about-info .info-right {
+  float: none;
+  width: 100%;
+}
+
+.l-heading {
+  text-align: center;
+}
+
+#about-info .info-right {
+  margin-top: 30px;
+}
+
+#contact-info .feature {
+  padding: 30px;
+  border-bottom: 1px dotted #444;
 }

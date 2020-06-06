@@ -135,10 +135,11 @@ nav li a.current /*makes more specific than a .current*/ {
 /* jumbotron */
 #jumbotron {
   background: url("../img/showcase.jpg") no-repeat center center/cover;
-  height: 90vh;
   color: white;
   text-align: center;
-  padding-top: 170px;
+  padding-top: 25vh;
+  height: 100vh;
+  padding-bottom: 40px;
 }
 #jumbotron h1 {
   font-size: 60px;
@@ -152,7 +153,7 @@ nav li a.current /*makes more specific than a .current*/ {
 
 /* Description */
 #desc {
-  height: 450px;
+  height: 600px;
 }
 
 .desc-img {
@@ -200,7 +201,7 @@ nav li a.current /*makes more specific than a .current*/ {
 }
 
 #testimonials {
-  height: 600px;
+  height: 100%;
   background: url("../img/test-bg.jpg") no-repeat center center/cover;
   border-radius: 5px;
 }
@@ -249,6 +250,13 @@ nav li a.current /*makes more specific than a .current*/ {
 #contact-form textarea:focus {
   outline: none;
   border-color: #f7c084;
+}
+
+#contact-form .btn {
+  display: block;
+  width: 40vw;
+  margin: auto;
+  text-align: center;
 }
 
 /* footer */
