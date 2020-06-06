@@ -1,1 +1,1 @@
-# HTML and CSS Projects from simple to advanced
+# Pure CSS Projects from simple to advanced
