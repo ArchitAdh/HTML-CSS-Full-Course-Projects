@@ -104,7 +104,7 @@ nav a {
   color: white;
 }
 
-nav h1 {
+nav .logo {
   padding: 15px;
   float: left;
 }
@@ -152,7 +152,7 @@ nav li a.current /*makes more specific than a .current*/ {
 
 /* Description */
 #desc {
-  height: 400px;
+  height: 450px;
 }
 
 .desc-img {

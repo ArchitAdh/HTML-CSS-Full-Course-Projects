@@ -1,0 +1,30 @@
+nav .logo {
+  text-align: center;
+  float: none;
+}
+
+nav ul,
+nav li {
+  float: none;
+}
+
+nav li a {
+  padding: 10px;
+  border-bottom: 1px dotted #555;
+}
+
+/* desc  */
+.desc-img {
+  display: none;
+}
+.desc-content {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* boxes */
+.feature {
+  float: none;
+  width: 100%;
+}
