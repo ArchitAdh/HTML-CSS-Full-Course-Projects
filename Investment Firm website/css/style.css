@@ -12,11 +12,11 @@
 
 body {
   font-family: "Roberto", sans-serif;
+  line-height: 1.4;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 p {
@@ -28,6 +28,37 @@ p {
 .text-primary {
   color: var(--primary-color);
 }
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.5rem 2rem;
+  border: none;
+  /* if we add this class to button  */
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+/* navbar */
 
 #navbar {
   background-color: #333;
@@ -50,9 +81,45 @@ p {
 #navbar ul li a {
   padding: 0.75rem;
   margin: 0 0.25rem;
+  color: #fff;
 }
 
 #navbar ul li a:hover {
   background: var(--primary-color);
   border-radius: 5px;
+}
+
+/* showcase */
+#showcase {
+  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  /* position: relative; */
+  /* content is made abs */
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* width: 100%; */
+  /* width required because abs pos */
+  padding: 0 2rem;
+
+  /* overlay */
+
+  /* position: absolute; */
+  /* so that offset can be set in parent container */
+  /* top: 0; */
+  /* left: 0; */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.showcase-content h1 {
+}
+
+.showcase-content p {
 }
