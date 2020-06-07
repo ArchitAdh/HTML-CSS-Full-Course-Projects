@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roberto:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #93cb52;
+}
+
+body {
+  font-family: "Roberto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 0.7rem;
+}
+
+/* Utilites */
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+#navbar ul li a {
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
