@@ -20,7 +20,7 @@ a {
 }
 
 p {
-  margin: 0.7rem;
+  margin: 0.7rem 0;
 }
 
 /* Utilites */
@@ -37,6 +37,16 @@ p {
   background: #f4f4f4;
 }
 
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
 .py-1 {
   padding: 1.5rem 0;
 }
@@ -45,6 +55,16 @@ p {
 }
 .py-3 {
   padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
 }
 
 .l-heading {
@@ -66,8 +86,10 @@ p {
 
 .btn {
   color: white;
+  display: block;
   background-color: var(--primary-color);
   padding: 0.5rem 2rem;
+  margin: 0.75rem 0;
   border: none;
   /* if we add this class to button  */
   border-radius: 5px;
@@ -87,6 +109,16 @@ p {
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
 }
 
 /* navbar */
@@ -165,4 +197,53 @@ p {
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+/* Who we are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+.who-img {
+  background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+/* clients */
+
+#clients .items {
+  display: flex;
+}
+#clients .items img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+/* Contact */
+
+#contact {
+  display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
