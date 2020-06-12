@@ -230,7 +230,7 @@ p {
 }
 
 #contact .contact-form,
-#contact .map {
+#contact #map {
   flex: 1;
 }
 
