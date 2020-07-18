@@ -32,3 +32,80 @@ h1 {
   max-width: var(--max-width);
   margin: 0 auto;
 }
+
+#timeline ul {
+  background-color: var(--primary-color);
+  padding: 50px 0;
+  /* border: 3px solid red; */
+}
+
+/* Create line */
+#timeline ul li {
+  /* border: 3px solid yellow; */
+  position: relative;
+  padding-top: 3rem;
+  list-style-type: none;
+  width: 5px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* Create boxes */
+#timeline ul li div {
+  /* border: 3px solid purple; */
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+/* left side */
+#timeline ul li:nth-child(odd) div {
+  left: 40px;
+}
+
+/* right side */
+#timeline ul li:nth-child(even) div {
+  right: 434px;
+}
+
+/* Dots */
+#timeline ul li:after {
+  content: " ";
+  /* border: 10px solid red; */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--secondary-color);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: background 0.5s ease-in-out;
+}
+
+/* arrow base */
+#timeline div:before {
+  content: " ";
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border: solid;
+}
+
+/* right side arrow */
+#timeline ul li:nth-child(odd) div:before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--secondary-color) transparent transparent;
+}
+
+/* left side arrow */
+#timeline ul li:nth-child(even) div:before {
+  right: -15px;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent transparent transparent var(--secondary-color);
+}
