@@ -1,0 +1,142 @@
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* toggler to make hmburger clikable */
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* provide a box or parent for lines to stay in */
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+/* Hamburger line, center one */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+
+/* lines before and after central line */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+  top: 10px;
+  z-index: 1;
+}
+.menu-wrap .hamburger > div::before {
+  top: -10px;
+}
+
+/* makes the line slant */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* moves the top and bottom line to align with center line, rotates line by 90 deg to create a cross */
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* rotates the lines when hovered on checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 4px solid fuchsia; */
+}
+
+.menu-wrap .menu > div {
+  background-color: var(--overlay-color);
+  height: 300vh;
+  width: 300vw;
+  display: flex;
+  flex: none;
+  /* solves border radius issue */
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  border-radius: 50%;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu ul li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu ul li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.menu-wrap .menu ul li a:hover {
+  color: var(--secondary-color);
+}
