@@ -68,6 +68,7 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   border-radius: 15px;
+  color: #fff;
 }
 
 .category-sports {
@@ -100,6 +101,7 @@ h6 {
 .btn-block {
   display: block;
   width: 100%;
+  text-align: center;
 }
 
 .btn:hover {
@@ -151,6 +153,22 @@ h6 {
 }
 .p-3 {
   padding: 3rem;
+}
+
+.l-heading {
+  font-size: 3rem;
+}
+
+/* Ineer page grid contaienr */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
 }
 
 /* Navigation */
@@ -281,6 +299,7 @@ h6 {
   text-align: center;
   font-size: 0.8rem;
   padding: 0.6em;
+  font-style: italic;
 }
 
 #main-footer .footer-container input[type="email"] {
