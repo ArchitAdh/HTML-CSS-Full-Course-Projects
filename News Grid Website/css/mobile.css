@@ -7,7 +7,7 @@
   grid-gap: 1.2rem;
 }
 
-#main-nav .logo {
+#main-nav a {
   width: 150px;
   justify-self: center;
 }
