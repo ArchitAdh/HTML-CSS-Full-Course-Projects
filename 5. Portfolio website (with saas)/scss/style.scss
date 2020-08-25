@@ -79,7 +79,7 @@ img {
   //header home
   &-home {
     background: $bg-image no-repeat center right / cover;
-    min-height: 100vh;
+    height: 100vh;
     color: #fff;
 
     //header content
@@ -386,3 +386,5 @@ img {
     }
   }
 }
+
+@import "media";
