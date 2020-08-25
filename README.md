@@ -1,3 +1,3 @@
 # Projects build using css only
 
-[View Projects live](https://archit-cssprojects.netlify.app/)
+[View Projects Live](https://archit-cssprojects.netlify.app/)
